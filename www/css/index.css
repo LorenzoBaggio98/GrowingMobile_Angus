@@ -1,0 +1,789 @@
+/* ---------------------------------------------------------------------------------------------------------------------
+   ------------------------------ GENERALE -----------------------------------------------------------------------------
+   -------------------------------------------------------------------------------------------------------------------*/
+
+* {
+    user-select: none;
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    overflow: hidden;
+    font-family: Helvetica,sans-serif !important;
+    float: left;
+    background-color: #fafafa;
+}
+
+.flexclass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noneclass {
+    display:none !important;
+}
+
+.hiddenclass {
+
+    visibility: hidden;
+
+}
+
+.visibleclass {
+
+    visibility: visible;
+
+}
+
+.opacity1-500 {
+    opacity: 1;
+    transition: opacity 500ms;
+
+}
+
+.opacity0 {
+    opacity: 0;
+}
+
+
+.loginangus {
+    width: 100%;
+    height: 26%;
+    background-image: url("../img/angusLogo.png");
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+
+.verticalemptyspace {
+    width: 100%;
+    float: left;
+}
+
+/*.verticalemptyspace {
+    height: 100%;
+    float: left;
+}*/
+/*
+.skewbalance {
+    transform: skew(40deg);
+
+}
+*/
+/* --------- DA CAMBIRE POI NEI MEDIA QUERY --------------------------------------------------------------------------*/
+
+/* Schermata 1: Login */
+
+.boxshadowinsetskyblue {
+   /* box-shadow: inset 0 0 5px 1px lightskyblue; */
+}
+
+.boxshadowinsetwhite {
+    /* box-shadow: inset 0 0 6px 2px white; */
+    background-color: #81D4FA !important;
+
+}
+/*
+.whiteboxshadow {
+    box-shadow: 0 0 5px 1px white;
+} */
+.redboxshadow {
+    box-shadow: 0 0 5px 1px red;
+}
+
+.p120 {
+    font-size: 120%;
+    letter-spacing: 2px;
+
+}
+
+.white {
+    color: white;
+}
+
+.p200 {
+
+    font-size: 200%;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+.p100 {
+    font-size: 100%;
+}
+
+input[type="password"]
+{
+    padding-bottom: 1.5%;
+    font-family: sans-serif !important;
+    height: 80%;
+}
+
+.redplaceholder::-webkit-input-placeholder {
+    font-size: 80%;
+    font-family: elianto,sans-serif !important;
+
+}
+
+.normalplaceholder::-webkit-input-placeholder {
+    font-size: 80%;
+    font-family: elianto,sans-serif !important;
+}
+
+
+/* Schermata 2: Progress Bar */
+
+#myProgress {
+  //  box-shadow: inset 0 0 5px 1px lightblue;
+    border: 2px solid black;
+    border-radius: 0.35rem;
+}
+
+#myBar {
+ //   box-shadow: 0 0 10px 2px rgba(0, 255, 255, 0.6), inset 0 0 5px 1px lightskyblue;
+    border-radius: 0.25rem;
+
+}
+
+.systemloading {
+    font-size: 160%;
+   /* font-family: Helvetica, sans-serif !important;
+
+    text-shadow: 0 0 5px rgba(255,255,255,0.6) , 0 0 10px rgba(255,255,255,0.6) , 0 0 15px rgba(255,255,255,0.6) , 0 0 15px rgba(0,255,255,0.6), 0 0 20px rgba(0,255,255,0.6), 0 0 30px rgba(0,255,255,0.6) ;
+
+    color: rgba(255,255,255,0.8);
+    */
+}
+
+.divloginpro {
+
+    padding-top: 1%;
+}
+
+/* schermata 3 HomePage */
+
+.iconscan {
+    width: 55%;
+}
+
+.textshadowlightskyblue {
+    /*
+    text-shadow: 0 0 8px #B3E5FC,0 0 8px #B3E5FC;
+    color:#01579B;
+    font-weight: bold;
+    */
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid #01579B;
+}
+
+.paddingfix { /* Senza BootStrap 1% */
+
+    padding-top: 1%;
+}
+/* ---------------------------------------------------------------------------------------------------------------------
+   ------------------------------ SCHERMATA 1 : LOGIN ------------------------------------------------------------------
+   -------------------------------------------------------------------------------------------------------------------*/
+
+.divtextareapro {
+
+    width: 80%;
+    height: 6%;
+ /*   transform: skew(-40deg); */
+    background-color: #fafafa;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-bottom: 2px solid dodgerblue;
+
+}
+.textareapro {
+     width: 100%;
+     height: 90%;
+     /*margin-left: auto;
+     margin-right: auto;*/
+     background-color: #fafafa !important;
+     border: none;
+   /*  transform: skew(40deg); */
+     font-family: elianto,sans-serif !important;
+     text-align: center;
+     color:#555;
+
+ }
+
+.divloginpro {
+
+    width: 80%;
+    height: 6%;
+ /*   transform: skew(-40deg); */
+    background-color:  #039BE5; /*#4a89dc; */
+    border-bottom: 2px solid #01579B;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.loginpro {
+    width: 60%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+  /*  transform: skew(40deg); */
+    font-family: elianto,sans-serif !important;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    letter-spacing: 5px;
+    color: #eee;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #fafafa inset;
+}
+
+.divloginpro:active {
+    background-color: #0277BD;
+}
+
+.redplaceholder::-webkit-input-placeholder {
+
+    color: #8b0000;
+    opacity: 0.8;
+
+}
+
+.normalplaceholder::-webkit-input-placeholder {
+
+    color: #888888;
+    opacity: 0.8;
+
+}
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.showhidepassword {
+
+    width: 12%;
+    height: 90%;
+ /*   transform: skew(40deg); */
+
+
+}
+
+.showhidepasswordimg {
+    opacity: 0.3;
+    width:100%;
+}
+
+.fingerprintcontainer {
+
+    width: 100%;
+    height: 40%;
+
+}
+
+
+.fingerprintimg {
+
+    width:40%;
+}
+
+.blackbar {
+
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    position: absolute;
+    z-index: 1000;
+    bottom:0
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------
+   ------------------------------ SCHERMATA 2: PROGRESS BAR ------------------------------------------------------------
+   -------------------------------------------------------------------------------------------------------------------*/
+
+#myProgress {
+    width: 80%;
+    height: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+
+
+    background: #E1F5FE;
+
+
+}
+
+#myBar {
+    width: 100%;
+    height: 100%;
+  /*  margin-right: 1%;
+    margin-left: 1%;
+*/
+    background: lightskyblue; /*rgba(135, 206, 250, 1); /*lightskyblue*/
+
+}
+
+.genericdiv {
+    width: 100%;
+    height: 5%;
+}
+
+.systemloading {
+    border-bottom: 2px solid #01579B;
+    border-radius: 2px;
+ /*   background-color: #4a89dc; */
+    padding: 2%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------
+   ------------------------------ SCHERMATA 3: HOME PAGE ---------------------------------------------------------------
+   -------------------------------------------------------------------------------------------------------------------*/
+
+.top {
+    width:100%;
+    height: 10%;
+    float: left;
+   /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: #0277BD;
+    border-bottom: 2px solid #01579B;
+
+}
+
+.bottom {
+
+    width:100%;
+    height: 10%;
+    float: left;
+}
+
+.centerapp {
+
+    width: 100%;
+    height: 80%;
+    float: left;
+
+    /*background-image: url("../img/appbg.jpg");*/
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+.bottomblock {
+
+    width: 20%;
+    height: 100%;
+    float: left;
+   /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: #0288D1;
+
+}
+
+
+.iconbottom {
+    width: 40%;
+}
+
+.scan {
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+.buttonapp {
+
+    width: 75%;
+    height: 8%;
+   /* transform: skew(-40deg); */
+    /*background-color: rgba(175, 189, 212, 0.3);
+    background-color: rgba(65, 105, 205, 0.2); */
+    background-color:  #039BE5; /*#4a89dc; */
+    border-bottom: 2px solid #01579B;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+
+}
+
+.buttonapp:active {
+    background-color: #0277BD;
+    transform: scale(0.95);
+}
+
+.greenbutton{
+    /*background-color: #64DD17 !important;
+    border-bottom: 2px solid #33691E !important;*/
+    background-color: forestgreen;
+}
+
+.greenbutton:active {
+    transform: scale(0.95);
+    background-color: green !important;
+}
+
+.buttonappSettings {
+
+    width: 75%;
+    height: 8%;
+    /* transform: skew(-40deg); */
+    /*background-color: rgba(175, 189, 212, 0.3);
+    background-color: rgba(65, 105, 205, 0.2); */
+    color: white;
+    background-color:  #039BE5; /*#4a89dc; */
+    border-bottom: 2px solid #01579B;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.disabled {
+
+    background-color: grey;
+    border-bottom: 2px solid black;
+    opacity: 0.5;
+}
+
+@keyframes pulse
+{
+    0%
+    {
+        transform: scale( 1 );
+    }
+
+    50%
+    {
+        transform: scale( 0.95 );
+    }
+
+    100%
+    {
+        transform: scale( 1 );
+    }
+}
+
+.iconscan {
+    animation: pulse 2s infinite;
+}
+
+.iconscannopulse {
+    animation: none;
+}
+
+.text {
+    width:100%;
+    height: 10%;
+    float: left;
+}
+
+.angusicon {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #B3E5FC;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.grafico {
+
+    width: 100% !important;
+    height: 56% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow: hidden !important;
+}
+
+.frecciasx {
+
+    width: 10%;
+    height: 60%;
+    float:left;
+    background-image: url("../img/frecciasx.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.frecciadx {
+
+    width: 10%;
+    height: 60%;
+    float:left;
+    background-image: url("../img/frecciadx.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.specialp {
+
+    width: 80%;
+    text-align: center;
+
+}
+
+/* --------- COSE ISPIRATE DA FACEBOOK ----------------------------------------------------------------------------------*/
+
+.lds-facebook {
+    width: 100%;
+    height: 40%;
+}
+.lds-facebook div {
+
+    margin-left: 4%;
+    width: 4%;
+
+    background: #03A9F4;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+    left: 45px;
+}
+@keyframes lds-facebook {
+    0% {
+        top: 3%;
+        height: 28%;
+    }
+    50%, 100% {
+        top: 9%;
+        height: 13%;
+    }
+}
+
+/* --------- FONTS ---------------------------------------------------------------------------------------------------*/
+/*
+@font-face {
+    font-family: avengers;
+    src: url("../fonts/AVENGEANCE HEROIC AVENGER.otf");
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Elianto-Regular.ttf");
+}
+
+@font-face {
+    font-family: myocrext;
+    src: url("../fonts/OCRAEXT.TTF");
+}
+*/
+/* --------- MEDIA QUERY ---------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1440px) and (orientation:portrait) { /* desktop e Note8 */
+
+    .p120 {
+        font-size: 400%;
+
+    }
+
+    .p200 {
+        font-size: 600%;
+
+    }
+
+    .p100 {
+        font-size: 350%;
+    }
+
+    .systemloading {
+        font-size: 550%;
+
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1282px) and (max-width: 1439px) and (orientation:portrait) { /* desktop e cellulari High Res*/
+
+    .p120 {
+        font-size: 260%;
+
+    }
+
+    .p200 {
+        font-size: 500%;
+
+    }
+
+    .p100 {
+        font-size: 200%;
+    }
+
+    .systemloading {
+        font-size: 450%;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1281px) { /* I TABLET FIGHI - Tipo Nexus9 768x1024 o samsung galaxy tab 800x1280 Oltre non ha senso andare, risoluzione 1440 fino a 1920 dei desktop*/
+
+    .p120 {
+        font-size: 160%;
+
+    }
+
+    .p200 {
+        font-size: 240%;
+
+    }
+
+    .p100 {
+        font-size: 130%;
+    }
+
+    .systemloading {
+        font-size: 230%;
+
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 559px) and (max-width: 766px) { /* Mini TABLET tipo Nexus 7 */
+
+    .p120 {
+        font-size: 140%;
+
+    }
+
+    .p200 {
+        font-size: 220%;
+
+    }
+
+    .p100 {
+        font-size: 120%;
+    }
+
+    .systemloading {
+        font-size: 180%;
+
+    }
+}
+
+
+@media screen and (min-width: 410px) and (max-width: 478px) {
+    /* Google Pixel, Nexus 6P ==> 411 x 731*/
+    .p120 {
+        font-size: 130%;
+
+    }
+
+    .p200 {
+        font-size: 210%;
+
+    }
+
+    .p100 {
+        font-size: 110%;
+    }
+
+    .systemloading {
+        font-size: 170%;
+
+    }
+
+}
+
+/* I Device da 322 fino a 409 sono quelli di default del CSS */
+
+@media screen and (min-width: 322px) and (max-width: 409px) { /* Samsung S3/4/5/6/7 + Huawei ==> 360 x 480*/
+
+
+}
+
+@media screen and (max-width: 321px) { /* Android mega tarocchi */
+
+    .p120 {
+        font-size: 110%;
+
+    }
+
+    .p200 {
+        font-size: 190%;
+
+    }
+
+    .p100 {
+        font-size: 90%;
+    }
+
+    .systemloading {
+        font-size: 150%;
+
+    }
+
+}
+
+
+/* --------- AGGIUNTE PER GRAFICO -------------------*/
+
+
+/*.modebar {
+    display: none !important;
+}*/
+
+/*.js-plotly-plot .plotly .modebar {
+
+    background: rgba(255, 255, 255, 0) !important;
+
+}
+
+.bg {
+    fill: rgba(255, 255, 255,0); !important;
+}
+
+.main-svg {
+    background: rgba(255, 255, 255, 0.6) !important;
+}
+*/
+.modebar-btn--logo {
+    display: none !important;
+
+}
+
+.containerinflux {
+    height: 100%;
+}
+
+#graphs-container {
+
+    background-image: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+

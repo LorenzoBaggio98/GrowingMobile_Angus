@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1081647755818",
+    "firebase_url": "https://angus-76dc7.firebaseio.com",
+    "project_id": "angus-76dc7",
+    "storage_bucket": "angus-76dc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081647755818:android:37d1d5b8bc87991b",
+        "android_client_info": {
+          "package_name": "com.growingmobile.angus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081647755818-24klbk9msete69e36egk0kt70477ivo4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATruE-QwQ6qo92rh_Aq24yC9-2zVlBQjM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

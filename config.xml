@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.growingmobile.angus" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Angus</name>
+    <description>
+        Applicazione per impianti industriali Angus.
+    </description>
+    <author email="growingmobile@gmail.com">
+       Growing Mobile Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon density="mdpi" height="57" platform="ios" src="icon.png" width="57">
+    </icon>
+    <splash density="mdpi" height="57" platform="ios" src="icon.png" width="57">
+    </splash>
+    <icon density="mdpi" platform="android" src="icon.png">
+    </icon>
+    <splash density="mdpi" platform="android" src="icon.png">
+    </splash>
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="Fullscreen" value="false" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="HideKeyboardFormAccessoryBar" value="true" />
+    <preference name="KeepRunning" value="true" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="KeepRunning" value="true" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.Notification" />
+    </feature>
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.4.2" />
+    <plugin name="cordova-plugin-ionic-keyboard" spec="^2.1.2" />
+    <plugin name="cordova-plugin-vibration" spec="^3.1.0" />
+    <plugin name="cordova-plugin-fullscreen" spec="~1.1.0" />
+    <plugin name="cordova-plugin-bluetooth-status" spec="~1.0.4" />
+    <plugin name="cordova-plugin-ble-central" spec="~1.1.9" />
+    <plugin name="cordova-plugin-firebase-authentication" spec="~1.0.1">
+        <variable name="FIREBASE_AUTH_VERSION" value="16.0.+" />
+    </plugin>
+    <plugin name="cordova-plugin-fingerprint-aio" spec="^1.3.8" />
+    <plugin name="cordova-plugin-local-notification" spec="^0.9.0-beta.2" />
+    <engine name="android" spec="^7.1.1" />
+</widget>

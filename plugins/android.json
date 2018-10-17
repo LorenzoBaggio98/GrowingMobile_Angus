@@ -1,0 +1,56 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-ble-central": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    },
+    "cordova-plugin-bluetooth-status": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    },
+    "cordova-plugin-fingerprint-aio": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    },
+    "cordova-plugin-firebase-authentication": {
+      "FIREBASE_AUTH_VERSION": "16.0.+",
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    },
+    "cordova-plugin-fullscreen": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    },
+    "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-support-android-plugin": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    },
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.growingmobile.angus"
+    }
+  }
+}
